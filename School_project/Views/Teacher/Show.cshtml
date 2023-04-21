@@ -1,0 +1,19 @@
+﻿@model School_project.Models.Teacher1
+@{
+    ViewBag.Title = "Show";
+}
+
+
+<h2>Show</h2>
+
+
+<div id="containerShow">
+    <nav>
+        <a class="navlink" href="/Teacher/List"> Back to teachers</a>
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.TeacherId" style="color:red"> Delete</a>
+    </nav>
+
+@Model.TeacherFname
+@Model.TeacherLname
+
+    </div>
